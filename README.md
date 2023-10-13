@@ -31,7 +31,7 @@ Run the project using `streamlit run app.py`
 ## Application Demo ( Video / Images )
 
 - Configration Screen
-  ![configscreen](images/configscreen.png)
+  ![configscreen](assets/images/configscreen.png)
 
 - Chatbot Screen
-  ![chatbotscreen](images/chatbot.png)
+  ![chatbotscreen](assets/images/chatbot.png)
