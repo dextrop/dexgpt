@@ -22,7 +22,7 @@ class MainApp():
             }
 
         BASIC_CSS = '''<style>{}</style>'''.format(
-            open("style.css").read()
+            open("assets/style.css").read()
         )
         st.markdown(BASIC_CSS, unsafe_allow_html=True)
 
