@@ -1,3 +1,8 @@
+__import__('pysqlite3')
+import sys
+
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 import streamlit as st
 from dexter.ui.configration_screen import ConfigureAppScreen
 from dexter.assistant import Dexter
@@ -5,9 +10,6 @@ from dexter.ui.chatbot_screen import AIAssistantChatbotScreen
 
 class MainApp():
     def __init__(self):
-        """
-        States : 1: Configration State, 2: Chatbot State.
-        """
         if "state" not in st.session_state:
             st.session_state.state = 0
 
@@ -20,7 +22,7 @@ class MainApp():
             }
 
         BASIC_CSS = '''<style>{}</style>'''.format(
-            open("assets/style.css").read()
+            open("style.css").read()
         )
         st.markdown(BASIC_CSS, unsafe_allow_html=True)
 
