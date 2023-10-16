@@ -10,6 +10,10 @@ from dexter.ui.chatbot_screen import AIAssistantChatbotScreen
 
 class MainApp():
     def __init__(self):
+        st.set_page_config(
+            page_title="DexGPT",
+            page_icon="🤖"
+        )
         if "state" not in st.session_state:
             st.session_state.state = 0
 
