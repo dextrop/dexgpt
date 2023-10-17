@@ -19,7 +19,7 @@ class Dexter():
         }
         """
         print (conf)
-        self.llm = OpenAI(temperature=0, openai_api_key=conf["openai_api_key"])
+        self.llm = OpenAI(temperature=0, openai_api_key=conf["openai_api_key"], model_name="gpt-3.5-turbo")
         self.vector = self.load_resource(conf)
 
         # If Resource is available then generate prompt.

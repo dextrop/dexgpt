@@ -15,4 +15,4 @@ unstructured_inference
 unstructured_pytesseract
 wikipedia
 openpyxl
-pysqlite3-binary
+# pysqlite3-binary
